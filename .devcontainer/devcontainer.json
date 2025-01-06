@@ -18,13 +18,13 @@
       "python.testing.unittestEnabled": false,
       "python.testing.pytestEnabled": true,
       "python.formatting.provider": "black",
-      "python.formatting.blackArgs": ["--config", "./pyproject.toml"],
+      "python.formatting.blackArgs": ["--config", "./hello-world/pyproject.toml"],
       "python.linting.enabled": true,
       "python.linting.flake8Enabled": true,
-      "python.linting.flake8Args": ["--config=./pyproject.toml"],
+      "python.linting.flake8Args": ["--config=./hello-world/pyproject.toml"],
       "python.linting.mypyEnabled": true,
       "python.analysis.extraPaths": [
-        "./src"
+        "./hello-world/hello_world"
       ],
       "files.trimTrailingWhitespace": true,
       "files.trimFinalNewlines": true,

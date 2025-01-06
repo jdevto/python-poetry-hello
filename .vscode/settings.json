@@ -8,13 +8,13 @@
   "files.trimFinalNewlines": true,
   "files.insertFinalNewline": true,
   "python.formatting.provider": "black",
-  "python.formatting.blackArgs": ["--config", "./pyproject.toml"],
+  "python.formatting.blackArgs": ["--config", "./hello-world/pyproject.toml"],
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
   "python.linting.mypyEnabled": true,
-  "python.linting.flake8Args": ["--config=./pyproject.toml"],
+  "python.linting.flake8Args": ["--config=./hello-world/pyproject.toml"],
   "python.analysis.extraPaths": [
-    "./src"
+    "./hello-world"
   ],
   "python.pythonPath": "/workspaces/test/.venv/bin/python",
   "[python]": {
