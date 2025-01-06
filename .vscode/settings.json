@@ -1,0 +1,27 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--config", "./pyproject.toml"],
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.linting.flake8Args": ["--config=./pyproject.toml"],
+  "python.analysis.extraPaths": [
+    "./src"
+  ],
+  "python.pythonPath": "/workspaces/test/.venv/bin/python",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "prettier.requireConfig": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Visual Studio Dark"
+}
