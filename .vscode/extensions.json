@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "davidanson.vscode-markdownlint",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "Gruntfuggly.todo-tree",
+    "hashicorp.terraform",
+    "ms-azuretools.vscode-docker",
+    "ms-python.autopep8",
+    "ms-python.debugpy",
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "ms-python.flake8",
+    "streetsidesoftware.code-spell-checker",
+    "vscode-icons-team.vscode-icons"
+  ]
+}

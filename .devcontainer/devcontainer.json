@@ -1,0 +1,61 @@
+{
+  "name": "Python 3",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers-extra/features/curl-apt-get:1": {}
+  },
+  "customizations": {
+    "settings": {
+      "files.eol": "\n",
+      "editor.formatOnSave": true,
+      "editor.tabSize": 4,
+      "editor.insertSpaces": true,
+      "python.testing.pytestArgs": [
+        "."
+      ],
+      "python.testing.unittestEnabled": false,
+      "python.testing.pytestEnabled": true,
+      "python.formatting.provider": "black",
+      "python.formatting.blackArgs": ["--config", "./pyproject.toml"],
+      "python.linting.enabled": true,
+      "python.linting.flake8Enabled": true,
+      "python.linting.flake8Args": ["--config=./pyproject.toml"],
+      "python.linting.mypyEnabled": true,
+      "python.analysis.extraPaths": [
+        "./src"
+      ],
+      "files.trimTrailingWhitespace": true,
+      "files.trimFinalNewlines": true,
+      "files.insertFinalNewline": true,
+      "terminal.integrated.defaultProfile.linux": "bash",
+      "workbench.iconTheme": "vscode-icons",
+      "workbench.colorTheme": "Visual Studio Dark",
+      "remote.extensionKind": {
+        "ms-azuretools.vscode-docker": "workspace"
+      }
+    },
+    "vscode": {
+      "extensions": [
+        "davidanson.vscode-markdownlint",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "Gruntfuggly.todo-tree",
+        "hashicorp.terraform",
+        "ms-azuretools.vscode-docker",
+        "ms-python.debugpy",
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.flake8",
+        "ms-python.mypy",
+        "streetsidesoftware.code-spell-checker",
+        "vscode-icons-team.vscode-icons"
+      ]
+    }
+  },
+  "postCreateCommand": ".devcontainer/scripts/postCreate.sh",
+  "remoteUser": "root",
+  "workspaceFolder": "/workspaces/test",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/test,type=bind,consistency=cached"
+}
