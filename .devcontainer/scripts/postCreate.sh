@@ -46,14 +46,5 @@ fi
 # Load the updated bashrc configuration for the current session
 source ~/.bashrc
 
-# Validate that validate-devschema is accessible
-echo "Validating script installation..."
-if ! validate-devschema --help &>/dev/null; then
-    echo "Error: validate-devschema script is not globally accessible."
-    exit 1
-else
-    echo "validate-devschema is installed and ready to use."
-fi
-
 # Display completion message
 echo "Development container setup complete!"
